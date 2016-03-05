@@ -1,5 +1,7 @@
 <html>
     <head>
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <title>Django Girls blog</title>
     </head>
     <body>
@@ -10,7 +12,7 @@
         {% for i in fotos %}
             <div>
                 <p>fecha: {{ i.fecha }}</p>
-                <h3><a href="www.google.com">{{ i.descripcion }}</a></h3>
+                <h3><a href="www.google.com" target="_blank">{{ i.descripcion }}</a></h3>
                 <p>{{ i.descripcion|linebreaks }}</p>
             </div>
         {% endfor %}
